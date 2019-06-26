@@ -145,3 +145,11 @@ stamp-h[1-9]
 /libcsplit
 /libcthreads
 /libuna
+
+*.user
+*.suo
+*.tlog
+.vs/
+Release/
+Debug/
+VSDebug/

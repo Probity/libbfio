@@ -10,3 +10,24 @@ For more information see:
 * Project documentation: https://github.com/libyal/libbfio/wiki/Home
 * How to build from source: https://github.com/libyal/libbfio/wiki/Building
 
+
+====
+
+# Building On Windows
+
+From Powershell run the following scripts:
+
+* synclibs.ps1
+* autogen.ps1
+
+This should pull down other libyal dependendencies and generate appropriate header files (common\Types.h, include\libbfio.h, etc)
+
+From cmd run the following commands:
+
+* msbuild msvscpp\libbfio\libbfio.sln /p:Platform=x64;Configuration=VSDebug
+* msbuild msvscpp\libbfio\libbfio.sln /p:Platform=x64;Configuration=Release
+
+libbfio.lib is now available here
+
+* \msvscpp\libbfio\x64\VSDebug
+* \msvscpp\libbfio\x64\Release
